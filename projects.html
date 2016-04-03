@@ -11,6 +11,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
@@ -21,19 +22,9 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 			<link rel="stylesheet" href="css/style-xlarge.css" />
 		</noscript>
 	</head>
-	<body id="top">
+	<body id="top" ng-app="">
 
-		<!-- Header -->
-		<header id="header" class="skel-layers-fixed">
-			<h1><a href="#">Boondog Games</a></h1>
-			<nav id="nav">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="aboutus.html">About Us</a></li>
-					<li><a href="projects.html">Projects</a></li>
-				</ul>
-			</nav>
-		</header>
+		<div ng-include="'menu.html'"></div>
 
 		<!-- Main -->
 		<section id="main" class="wrapper style1">
@@ -53,15 +44,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 	</section>
 
 	<!-- Footer -->
-	<footer id="footer">
-		<div class="container">
-		</div>
-		<ul class="copyright">
-			<li>&copy; boondoggames. All rights reserved.</li>
-			<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
-		</ul>
-	</div>
-</footer>
+	<div ng-include="'footer.html'"></div>
 
 	</body>
 </html>
